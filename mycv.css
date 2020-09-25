@@ -1,0 +1,100 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body::after {
+    content: "";
+    background: url(https://as2.ftcdn.net/jpg/02/03/72/15/500_F_203721512_xgtPe66jZ2J4nGgnjDblNQ6URLv2fRPT.jpg);
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1;   
+}
+
+.allpage{
+    width:1700px;
+    margin-left: 80px;
+    color:#334736
+}
+
+.grid-header{
+    display:grid;
+    grid-template-columns:repeat(3 300px);
+    background-color:#AFC8AB;
+    grid-column-gap: 0px;
+    margin-bottom: 20px;
+    border: 1px solid black;
+}
+
+.name{
+    border: 1px, solid black;
+    width: 300px;
+    grid-column-start: 2;
+    margin-left: 80px; 
+}
+
+.name h1 {
+    font-size: 30px;
+}
+
+.name h2 {
+    font-size: 20px;
+}
+
+img{
+    width:150px;
+    padding: 20px;
+    margin-left: 20px;
+}
+
+
+.info{
+    grid-column-start: 3;
+    grid-row-start: 1;
+}
+
+.photo {
+    border: 3px solid white;
+    width: 200px;
+    grid-column-start: 1;
+    grid-row-start:1;
+    margin: 10px;
+}
+
+.grid-main{
+    display:grid;
+    grid-template-columns: repeat(7, 200px);
+    grid-column-gap: 10px; ;
+}
+
+.education {
+    grid-column: 1/3 ;
+    background-color: #DEBBAB;
+}
+
+.experiences {
+    grid-column: 3/5;
+    background-color: #DEBBAB;
+}
+
+.skills {
+    grid-column: 5/7;
+    background-color: #DEBBAB;
+}
+
+li{
+    padding: 10px;
+}
+footer{
+    background-color: #AFC8AB;
+}
+    
+
+footer h2{
+    text-align: center;
+}
+
