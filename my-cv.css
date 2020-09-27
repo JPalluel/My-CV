@@ -1,0 +1,124 @@
+*{
+    margin: O;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+    body::after {
+    content: "";
+    background: url(https://as2.ftcdn.net/jpg/02/03/72/15/500_F_203721512_xgtPe66jZ2J4nGgnjDblNQ6URLv2fRPT.jpg);
+    background-size:repeat;
+    opacity: 0.3;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    position: absolute;
+    z-index: -1; 
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 0,2fr 200px 50px;
+    width:1500px;
+    margin:auto;
+    grid-row-gap: 40px;;
+    grid-template-areas: 
+    "photo  name info"
+    "education experiences skills"
+    "footer footer footer";
+    
+}
+
+li{
+    list-style-type: none;
+}
+
+
+
+.name{
+    grid-area: name;
+    background-color:#AFC8AB;
+    border-radius: 8px;
+
+}
+
+.photo{
+    grid-area:photo;
+    background-color:#AFC8AB;
+    border-radius: 8px;
+   
+}
+
+
+.info{
+    grid-area:info;
+    background-color:#AFC8AB;
+    border-radius: 8px;
+ 
+}
+
+
+
+
+.education{
+    grid-area: education;
+    background-color: #DEBBAB;
+    border-radius: 8px;
+}
+
+
+.experiences{    
+    grid-area: experiences;
+    background-color: #DEBBAB;
+    border-radius: 8px;
+}
+
+
+.skills{
+    grid-area: skills;
+    background-color: #DEBBAB;
+    border-radius: 8px;
+
+}
+ 
+
+
+.footer{ 
+    grid-area: footer;
+    background-color:#AFC8AB;
+    border-radius: 8px;
+    
+}
+
+img{
+    width:200px;
+    border-radius: 8px;
+
+}
+
+
+
+@media only screen and (max-width: 550px){
+    .grid{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.5fr 0.5fr 0.5fr 2fr 2fr 2fr 1fr;
+        grid-gap:0;
+        grid-template-areas:
+        "photo"
+        "name"
+        "info"
+        "education"
+        "experiences"
+        "skills"
+        "footer";
+        border-radius: 8px;
+        
+} 
+
+img{
+    width: 150px;
+    border-radius:30%;
+}
+}
